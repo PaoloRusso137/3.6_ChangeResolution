@@ -16,7 +16,7 @@ from torch.utils.data.dataloader import DataLoader
 
 
 base_transform = transforms.Compose([
-    transforms.resize.size(240,320),
+    transforms.Resize(50),
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
 ])
